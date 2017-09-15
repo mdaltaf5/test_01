@@ -1,6 +1,7 @@
 import java.util.Date;
+import java.util.Scanner;
 
-/**
+			/**
  * Class that stores information about the concrete student
  * 
  * DO NOT REMOVE given methods, but you can add new methods/fields/constructor
@@ -39,22 +40,31 @@ public class Student implements Comparable {
 	}
 
 	public int getId() {
+		System.Out.println("Enter your ID:");
+		id=Integer parseInt(a[0]);
 		return id;
 	}
 
 	public void setId(int id) {
+		
 		this.id = id;
 	}
 
 	public String getFullName() {
+		Scanner s=new Scanner(System.in);
+		System.Out.println("Enter your Full Name:");
+		String fullName=Scanner.nextLine();
 		return fullName;
 	}
 
 	public void setFullName(String fullName) {
+
 		this.fullName = fullName;
 	}
 
 	public Date getBirthDate() {
+		System.Out.println("Enter your Age in yyyy-MM-dd format:");
+		int birthDate=Scanner.nextLine();
 		return birthDate;
 	}
 
@@ -63,6 +73,7 @@ public class Student implements Comparable {
 	}
 
 	public double getAvgMark() {
+		
 		return avgMark;
 	}
 
